@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: Roboto, "Tajawal", sans-serif;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 99;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  gap: 60px;
+  border-bottom: 1px white solid;
+}
+
+.caja-items-nav li {
+  display: inline-block;
+  height: 100%;
+}
+.caja-items-nav li a {
+  display: block;
+  height: 100%;
+  padding: 20px 0px;
+  font-size: 1.1rem;
+  margin-left: 10px;
+  color: white;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+}
+
+.caja-items-nav a:hover {
+  border-bottom: 2px solid white;
+}
+
+main .section_Slider {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  max-height: 100vh;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://media.traveler.es/photos/6266b5f329178a5fdf144ea6/16:9/w_1280,c_limit/Ladrilleros_Beach_Colombia.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main .section_Slider .frase_landing {
+  margin-top: 100px;
+  padding: 20px;
+}
+main .section_Slider .frase_landing .frase {
+  font-size: 6em;
+  font-weight: 800;
+  line-height: 100px;
+  color: white;
+}
+main .section_Slider .frase_landing .frase .item-frase {
+  display: block;
+  -webkit-animation: roll 8s ease 1s backwards;
+          animation: roll 8s ease 1s backwards;
+}
+main .section_Slider .frase_landing .frase .item-frase:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  opacity: 1;
+}
+main .section_Slider .frase_landing .frase .item-frase:nth-child(2) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  opacity: 1;
+}
+main .section_Slider .frase_landing .frase .item-frase:nth-child(3) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  opacity: 1;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+}
+main .section_Slider .explicacion {
+  margin-top: 10px;
+  color: white;
+  white-space: pre-line;
+}
+
+@-webkit-keyframes roll {
+  0% {
+    transform: translate3d(0, -40%, 0);
+    opacity: 0;
+  }
+  27.5%, 100% {
+    transform: translate3d(0, 0%, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes roll {
+  0% {
+    transform: translate3d(0, -40%, 0);
+    opacity: 0;
+  }
+  27.5%, 100% {
+    transform: translate3d(0, 0%, 0);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */

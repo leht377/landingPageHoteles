@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@700;800;900&display=swap')
+@import "reset"
+
+$blackTransparent: rgba(0, 0, 0, 0.459)
+$paddingXPagina: 10px
+$colorNav: white
+$tamanoDeLetra: 18px
+$fontFamily: Roboto
+
+html
+    font-size: $tamanoDeLetra
+
+body
+    font-family: $fontFamily,'Tajawal', sans-serif
+    position: relative
+
+header
+    width: 100%
+    position: absolute
+    z-index: 99
+    // background-color: $blackTransparent
+    nav
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 0px 20px
+        gap: 60px
+        border-bottom: 1px $colorNav solid
+
+.caja-items-nav
+    li
+        display: inline-block
+        height: 100%
+        a
+            display: block
+            height: 100%
+            padding: 20px 0px
+            font-size: 1.1rem
+            margin-left: 10px
+            color: $colorNav
+            font-weight: bold
+            border-bottom: 2px solid transparent
+
+.caja-items-nav
+    a
+        &:hover
+            border-bottom: 2px solid $colorNav
+
+main
+    .section_Slider
+        display: flex
+        justify-content: start
+        align-items: center
+        max-height: 100vh
+        height: 100vh
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://media.traveler.es/photos/6266b5f329178a5fdf144ea6/16:9/w_1280,c_limit/Ladrilleros_Beach_Colombia.jpg")
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        .frase_landing
+            margin-top: 100px
+            padding: 20px
+            .frase
+                font-size: 6em
+                font-weight: 800
+                line-height: 100px
+                color: white
+                .item-frase
+                    display: block
+                    animation: roll 8s ease 1s backwards
+                    &:nth-child(1)
+                        animation-delay: 0s
+                        opacity: 1
+                    &:nth-child(2)
+                        animation-delay: 1s
+                        opacity: 1
+                    &:nth-child(3)
+                        animation-delay: 2s
+                        opacity: 1
+                        color: transparent
+                        -webkit-text-stroke: 2px white
+
+        .explicacion
+            margin-top: 10px
+            color: white
+            white-space: pre-line
+
+@keyframes roll
+    0%
+        transform: translate3d(0,-40%,0)
+        opacity: 0
+    27.5%, 100% 
+        transform: translate3d(0,0%,0)
+        opacity: 1
