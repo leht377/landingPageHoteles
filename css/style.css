@@ -164,14 +164,14 @@ main #section_Slider .explicacion {
   text-align: end;
 }
 main #section_Otros_Hoteles {
-  background-image: linear-gradient(to right, #0741ad, #0051b7, #0060c0, #006fc7, #157dce, #1d7ac1, #2576b4, #2d72a7, #275c86, #214867, #1b3449, #14212d);
+  background-image: linear-gradient(to left bottom, #ffffff, #fefefe, #fefefe, #fdfdfd, #fcfcfc, #fafafb, #f9f9fa, #f7f7f9, #f3f4f8, #eff2f7, #ebeff5, #e6edf4);
   width: 100%;
   height: 100vh;
-  color: #FFFFFF;
+  color: #000000;
 }
 main #section_Otros_Hoteles h2 {
   color: transparent;
-  -webkit-text-stroke: 2px #FFFFFF;
+  -webkit-text-stroke: 2px #000000;
   font-size: 3rem;
   padding: 10px;
 }
