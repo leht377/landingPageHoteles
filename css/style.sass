@@ -2,13 +2,13 @@
 @import "reset"
 
 $blackTransparent: rgba(0, 0, 0, 0.459)
-$paddingXPagina: 10px
+$paddingXPagina: 20px
 $colorNav: white
-$tamanoDeLetra: 18px
+$tamanoDeLetra: 15px
 $fontFamily: Roboto
 
 html
-    font-size: $tamanoDeLetra
+    font-size: 15px
 
 body
     font-family: $fontFamily,'Tajawal', sans-serif
@@ -19,51 +19,68 @@ header
     position: absolute
     z-index: 99
     // background-color: $blackTransparent
+    hr
+        background: $colorNav
+        height: 2px
+        width: 97%
+        border-radius: 70px
+        margin: auto
     nav
         display: flex
         justify-content: center
         align-items: center
         padding: 0px 20px
         gap: 60px
-        border-bottom: 1px $colorNav solid
+        .caja-items-nav
+            li
+                display: inline-block
+                height: 100%
+                a
+                    display: block
+                    height: 100%
+                    padding: 20px 0px
+                    font-size: 1.2em
+                    margin-left: 10px
+                    color: $colorNav
+                    font-weight: bold
+                    border-bottom: 2px solid transparent
+                    &:hover
+                        border-bottom: 2px solid $colorNav
 
-.caja-items-nav
-    li
-        display: inline-block
-        height: 100%
-        a
-            display: block
-            height: 100%
-            padding: 20px 0px
-            font-size: 1.1rem
-            margin-left: 10px
-            color: $colorNav
-            font-weight: bold
-            border-bottom: 2px solid transparent
-
-.caja-items-nav
-    a
-        &:hover
-            border-bottom: 2px solid $colorNav
+@media only screen and (max-width:750px)
+    html
+        font-size: 12px
+    main
+        .section_Slider
+            .frase_landing
+                text-align: center !important
+            .contenedor-fotos
+                display: none !important
 
 main
     .section_Slider
         display: flex
-        justify-content: start
+        justify-content: end
         align-items: center
+        flex-direction: row
         max-height: 100vh
         height: 100vh
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://media.traveler.es/photos/6266b5f329178a5fdf144ea6/16:9/w_1280,c_limit/Ladrilleros_Beach_Colombia.jpg")
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.hotelcosmospacifico.com/uploads/cms_apps/imagenes/cosmos-pacifico-piscina.jpg")
+        background-attachment: fixed
         background-repeat: no-repeat
         background-size: cover
         background-position: center
+        padding: 20px $paddingXPagina
         .frase_landing
             margin-top: 100px
-            padding: 20px
+            padding: 20px 0px
+            flex-grow: 2
+            order: 2
+            text-align: end
             .frase
-                font-size: 6em
+                font-size: 5.5em
                 font-weight: 800
-                line-height: 100px
+                line-height: 80px
                 color: white
                 .item-frase
                     display: block
@@ -79,11 +96,58 @@ main
                         opacity: 1
                         color: transparent
                         -webkit-text-stroke: 2px white
+        .contenedor-fotos
+            margin-top: 100px
+            padding: 20px $paddingXPagina
+            display: flex
+            justify-content: end
+            align-items: center
+            height: 80%
+            flex-grow: 1
+            order: 1
+            div
+                width: 400px
+            figure
+                width: 200px
+                height: 240px
+                border: 20px #f0f0f0 solid
+                display: inline-block
+                box-shadow: 1px 5px 20px black
+                img
+                    object-fit: cover
+                    width: 100%
+                    height: 100%
+            figure:nth-child(1)
+                transform: rotate(-21deg)
+            figure:nth-child(2)
+                margin-left: -83px
+                transform: rotate(12deg)
+            figure:nth-child(3)
+                margin-top: -110px
+                transform: rotate(-60deg)
 
         .explicacion
             margin-top: 10px
             color: white
             white-space: pre-line
+            text-align: end
+    .section_Otros_Hoteles
+        width: 100%
+        height: 100vh
+        background-color: rgb(218, 216, 218)
+    .section_nuestrosServicos
+        width: 100%
+        height: 100vh
+        background-color: rgb(245, 240, 245)
+    .section_Descarga
+        width: 100%
+        height: 100vh
+        background-color: rgb(231, 231, 231)
+
+footer
+    width: 100%
+    height: 50vh
+    background-color: rgb(175, 175, 175)
 
 @keyframes roll
     0%

@@ -14,7 +14,7 @@ a {
 }
 
 html {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 body {
@@ -27,53 +27,74 @@ header {
   position: absolute;
   z-index: 99;
 }
+header hr {
+  background: white;
+  height: 2px;
+  width: 97%;
+  border-radius: 70px;
+  margin: auto;
+}
 header nav {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0px 20px;
   gap: 60px;
-  border-bottom: 1px white solid;
 }
-
-.caja-items-nav li {
+header nav .caja-items-nav li {
   display: inline-block;
   height: 100%;
 }
-.caja-items-nav li a {
+header nav .caja-items-nav li a {
   display: block;
   height: 100%;
   padding: 20px 0px;
-  font-size: 1.1rem;
+  font-size: 1.2em;
   margin-left: 10px;
   color: white;
   font-weight: bold;
   border-bottom: 2px solid transparent;
 }
-
-.caja-items-nav a:hover {
+header nav .caja-items-nav li a:hover {
   border-bottom: 2px solid white;
 }
 
+@media only screen and (max-width: 750px) {
+  html {
+    font-size: 12px;
+  }
+  main .section_Slider .frase_landing {
+    text-align: center !important;
+  }
+  main .section_Slider .contenedor-fotos {
+    display: none !important;
+  }
+}
 main .section_Slider {
   display: flex;
-  justify-content: start;
+  justify-content: end;
   align-items: center;
+  flex-direction: row;
   max-height: 100vh;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://media.traveler.es/photos/6266b5f329178a5fdf144ea6/16:9/w_1280,c_limit/Ladrilleros_Beach_Colombia.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.hotelcosmospacifico.com/uploads/cms_apps/imagenes/cosmos-pacifico-piscina.jpg");
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding: 20px 20px;
 }
 main .section_Slider .frase_landing {
   margin-top: 100px;
-  padding: 20px;
+  padding: 20px 0px;
+  flex-grow: 2;
+  order: 2;
+  text-align: end;
 }
 main .section_Slider .frase_landing .frase {
-  font-size: 6em;
+  font-size: 5.5em;
   font-weight: 800;
-  line-height: 100px;
+  line-height: 80px;
   color: white;
 }
 main .section_Slider .frase_landing .frase .item-frase {
@@ -98,10 +119,69 @@ main .section_Slider .frase_landing .frase .item-frase:nth-child(3) {
   color: transparent;
   -webkit-text-stroke: 2px white;
 }
+main .section_Slider .contenedor-fotos {
+  margin-top: 100px;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 80%;
+  flex-grow: 1;
+  order: 1;
+}
+main .section_Slider .contenedor-fotos div {
+  width: 400px;
+}
+main .section_Slider .contenedor-fotos figure {
+  width: 200px;
+  height: 240px;
+  border: 20px #f0f0f0 solid;
+  display: inline-block;
+  box-shadow: 1px 5px 20px black;
+}
+main .section_Slider .contenedor-fotos figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+main .section_Slider .contenedor-fotos figure:nth-child(1) {
+  transform: rotate(-21deg);
+}
+main .section_Slider .contenedor-fotos figure:nth-child(2) {
+  margin-left: -83px;
+  transform: rotate(12deg);
+}
+main .section_Slider .contenedor-fotos figure:nth-child(3) {
+  margin-top: -110px;
+  transform: rotate(-60deg);
+}
 main .section_Slider .explicacion {
   margin-top: 10px;
   color: white;
   white-space: pre-line;
+  text-align: end;
+}
+main .section_Otros_Hoteles {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(218, 216, 218);
+}
+main .section_nuestrosServicos {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(245, 240, 245);
+}
+main .section_Descarga {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(231, 231, 231);
+}
+
+footer {
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(175, 175, 175);
 }
 
 @-webkit-keyframes roll {
