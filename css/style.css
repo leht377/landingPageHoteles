@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
@@ -332,61 +333,70 @@ main #section_Descarga .telefono img {
 footer {
   width: 100%;
   background-color: #27272e;
+  padding: 50px 80px;
 }
 footer section {
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
+  gap: 20px;
 }
-footer section .logo article {
-  padding: 20px 30px;
+footer section .logo-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+footer section .logo-footer article {
   text-align: justify;
 }
-footer section .logo div {
+footer section .logo-footer .box-social-media {
   width: 100%;
-  height: 50%;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 150px 150px 150px;
-  grid-template-row: 1fr 1fr 1fr;
-  gap: 1px;
 }
-footer section .logo div h3 {
-  grid-column-start: 1;
-  grid-column-end: -1;
+footer section .logo-footer .box-social-media h3 {
+  padding: 10px 0px;
 }
-footer section .logo div figure {
+footer section .logo-footer .box-social-media .social-media {
+  display: flex;
+  padding: 10px;
+}
+footer section .logo-footer .box-social-media .social-media figure {
   width: 200px;
   display: flex;
+  align-items: center;
+  gap: 10px;
 }
-footer section .logo div figure img {
+footer section .logo-footer .box-social-media .social-media figure img {
   width: 50px;
-  height: 100%;
 }
-footer section .logo div figure figcaption {
+footer section .logo-footer .box-social-media .social-media figure figcaption {
   text-align: start;
-  padding: 50px 0px;
+}
+footer section .Ventajas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 footer section .Ventajas h2 {
-  padding: 30px 0px;
-  text-align: center;
+  padding: 10px 0px;
+  text-align: start;
 }
-footer section .Ventajas ul {
-  text-align: center;
+footer section .Ventajas .box-ventajas {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-footer section .Ventajas ul li {
-  margin-top: 10px;
+footer section .Ventajas .box-ventajas li {
+  font-weight: bold;
 }
-footer section .Ventajas figure {
-  display: inline-block;
+footer section .Ventajas .box-ventajas li::before {
+  content: "• ";
 }
-footer section .Ventajas figure img {
-  margin-top: 50px;
-}
-footer section .Ventajas .Auctores {
-  width: 60%;
-  display: inline-block;
+footer section .Ventajas .box-logo-autores {
+  display: flex;
+  padding-top: 10px;
+  align-items: center;
 }
 
 @-webkit-keyframes roll {
