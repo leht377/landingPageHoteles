@@ -292,8 +292,67 @@ main
 
 footer
     width: 100%
-    height: 50vh
-    background-color: rgb(175, 175, 175)
+
+    background-color: #27272e
+    section
+        color: white
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr
+
+        .logo
+
+            figure
+                img
+            article
+                padding: 20px 30px
+                text-align: justify
+            div
+
+                width: 100%
+                height: 50%
+                padding: 20px
+                display: grid
+                grid-template-columns: 150px 150px 150px
+                grid-template-row: 1fr 1fr 1fr
+                gap: 1px
+
+                h3
+                    grid-column-start: 1
+                    grid-column-end: -1
+
+                figure
+
+                    width: 200px
+
+                    display: flex
+
+                    img
+                        width: 50px
+                        height: 100%
+                    figcaption
+                        text-align: start
+                        padding: 50px 0px
+
+        .Ventajas
+
+            h2
+                padding: 30px 0px
+                text-align: center
+            ul
+
+                text-align: center
+                li
+                    margin-top: 10px
+            figure
+
+                display: inline-block
+                img
+                    margin-top: 50px
+
+            .Auctores
+                width: 60%
+                display: inline-block
 
 @keyframes roll
     0%
