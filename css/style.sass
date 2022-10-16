@@ -2,7 +2,7 @@
 @import "reset"
 
 $blackTransparent: rgba(0, 0, 0, 0.459)
-$paddingXPagina: 20px
+$paddingXPagina: 80px
 $colorNav: white
 $tamanoDeLetra: 15px
 $fontFamily: Roboto
@@ -12,6 +12,7 @@ $amarillologo: #ECB84A
 html
     font-size: 15px
     scroll-behavior: smooth
+
 body
     font-family: $fontFamily,'Tajawal', sans-serif
     position: relative
@@ -31,9 +32,12 @@ header
         display: flex
         justify-content: space-between
         align-items: center
-        padding: 0px 250px
+        padding: 0px $paddingXPagina
         gap: 60px
-
+        figure
+            img
+                width: 150px
+                height: 65px
         .caja-items-nav
             li
                 display: inline-block
@@ -50,16 +54,12 @@ header
                     &:hover
                         border-bottom: 2px solid $colorNav
 
-@media only screen and (max-width:750px)
     html
         font-size: 12px
     main
-        .section_Slider
-            .frase_landing
-                text-align: center !important
-            .contenedor-fotos
-                display: none !important
-
+        .Contenenedor_Otro_Hoteles
+            grid-template-columns: 1fr !important
+            grid-row: 1fr auto
 main
     #section_Slider
         display: flex
@@ -76,8 +76,6 @@ main
         padding: 20px $paddingXPagina
         .frase_landing
             margin-top: 100px
-
-            padding-right: 100px
             flex-grow: 2
             order: 2
             text-align: end
@@ -102,12 +100,11 @@ main
                         -webkit-text-stroke: 2px white
         .contenedor-fotos
             margin-top: 100px
-            padding: 20px $paddingXPagina
             display: flex
             justify-content: end
             align-items: center
             height: 80%
-            flex-grow: 1
+            margin-left: 60px
             order: 1
             div
                 width: 400px
@@ -139,24 +136,26 @@ main
         background-image: linear-gradient(to left bottom, #ffffff, #fefefe, #fefefe, #fdfdfd, #fcfcfc, #fafafb, #f9f9fa, #f7f7f9, #f3f4f8, #eff2f7, #ebeff5, #e6edf4)
         width: 100%
         height: 100vh
+        padding: 0px $paddingXPagina
         color: $azulLogo
-        h2
-            color: transparent
-            -webkit-text-stroke: 2px $azulLogo
-            font-size: 3rem
-            padding: 10px
+
         .Contenenedor_Otro_Hoteles
             width: 100%
             height: 90%
             padding: 20px
-            display: flex
-            flex-wrap: wrap
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-template-row: 1fr 1fr
             gap: 10px
+            h2
+                color: transparent
+                -webkit-text-stroke: 2px $azulLogo
+                font-size: 3rem
+                padding: 10px
+                grid-column-start: 1
+                grid-column-end: -1
             figure
                 display: flex
-                width: 48%
-                height: 48%
-
                 img
 
                     object-fit: cover
@@ -169,14 +168,33 @@ main
                     text-align: justify
                     h4
                         margin-bottom: 20px
-
     #section_nuestrosServicos
         width: 100%
         height: 100vh
+        padding: 0px $paddingXPagina
         background-color: rgb(245, 240, 245)
+        h2
+            text-align: center
+            padding: 20px 0px
+            font-weight: 900
+            font-size: 3.5rem
+        #box-cards
+            width: 100%
+            display: flex
+            align-items: stard
+            gap: 10px
+            padding-top: 50px
+            flex-wrap: wrap
+            .card-servicios
+                flex-grow: 1
+                min-width: 200px
+                height: 350px
+                border-radius: 10px
+                background: $azulLogo
     #section_Descarga
         width: 100%
         height: 100vh
+        padding: 0px $paddingXPagina
         background-color: rgb(231, 231, 231)
 
 footer
@@ -191,3 +209,50 @@ footer
     27.5%, 100% 
         transform: translate3d(0,0%,0)
         opacity: 1
+
+@media only screen and (max-width:750px)
+
+    header
+        nav
+            padding: 2px
+            gap: 2px
+            figure
+                flex-grow: 1
+                img
+                    width: 110px
+                    height: 55px
+            .caja-items-nav
+                flex-grow: 2
+    #section_Slider
+        padding: 0px
+        justify-content: center !important
+        .frase_landing
+            margin-top: 0px !important
+            .frase
+                font-size: 3.5rem !important
+            .explicacion
+                text-align: center
+    #section_Otros_Hoteles
+        padding: 0px !important
+        .Contenenedor_Otro_Hoteles
+            grid-template-columns: 1fr !important
+            grid-template-row: 1fr
+            gap: 5px !important
+            figure
+                img
+                    width: 50% !important
+                    height: 100% !important
+                figcaption
+                    padding: 10px !important
+
+@media only screen and (max-width:750px)
+    html
+        font-size: 12px
+    main
+        #section_Slider
+            .frase_landing
+                text-align: center !important
+            .contenedor-fotos
+                display: none !important
+
+@media only screen and (max-width:900px)
