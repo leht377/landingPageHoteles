@@ -293,8 +293,62 @@ main #section_Descarga .telefono img {
 
 footer {
   width: 100%;
-  height: 50vh;
-  background-color: rgb(175, 175, 175);
+  background-color: #27272e;
+}
+footer section {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+footer section .logo article {
+  padding: 20px 30px;
+  text-align: justify;
+}
+footer section .logo div {
+  width: 100%;
+  height: 50%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-row: 1fr 1fr 1fr;
+  gap: 1px;
+}
+footer section .logo div h3 {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+footer section .logo div figure {
+  width: 200px;
+  display: flex;
+}
+footer section .logo div figure img {
+  width: 50px;
+  height: 100%;
+}
+footer section .logo div figure figcaption {
+  text-align: start;
+  padding: 50px 0px;
+}
+footer section .Ventajas h2 {
+  padding: 30px 0px;
+  text-align: center;
+}
+footer section .Ventajas ul {
+  text-align: center;
+}
+footer section .Ventajas ul li {
+  margin-top: 10px;
+}
+footer section .Ventajas figure {
+  display: inline-block;
+}
+footer section .Ventajas figure img {
+  margin-top: 50px;
+}
+footer section .Ventajas .Auctores {
+  width: 60%;
+  display: inline-block;
 }
 
 @-webkit-keyframes roll {
