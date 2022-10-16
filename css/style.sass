@@ -6,8 +6,9 @@ $paddingXPagina: 80px
 $colorNav: white
 $tamanoDeLetra: 15px
 $fontFamily: Roboto
-$azulLogo: #000000
+$azulLogo: #27272e
 $amarillologo: #ECB84A
+$bgSecciones: linear-gradient(to left bottom, #ffffff, #fefefe, #fefefe, #fdfdfd, #fcfcfc, #fafafb, #f9f9fa, #f7f7f9, #f3f4f8, #eff2f7, #ebeff5, #e6edf4)
 
 html
     font-size: 15px
@@ -133,7 +134,7 @@ main
             white-space: pre-line
             text-align: end
     #section_Otros_Hoteles
-        background-image: linear-gradient(to left bottom, #ffffff, #fefefe, #fefefe, #fdfdfd, #fcfcfc, #fafafb, #f9f9fa, #f7f7f9, #f3f4f8, #eff2f7, #ebeff5, #e6edf4)
+        background-image: $bgSecciones
         width: 100%
         height: 100vh
         padding: 0px $paddingXPagina
@@ -172,35 +173,83 @@ main
         width: 100%
         height: 100vh
         padding: 0px $paddingXPagina
-        background-color: rgb(245, 240, 245)
+        background: #27272e
         h2
             text-align: center
             padding: 20px 0px
             font-weight: 900
             font-size: 3.5rem
+            color: white
+        p
+            color: #dddddd
         #box-cards
             width: 100%
             display: flex
             align-items: stard
-            gap: 10px
-            padding-top: 50px
+            gap: 20px
+            padding-top: 70px
             flex-wrap: wrap
             .card-servicios
-                flex-grow: 1
+                flex: 1
                 min-width: 200px
+                max-width: 320px
                 height: 350px
                 border-radius: 10px
-                background: $azulLogo
+                border: 2px solid #24241f
+                cursor: pointer
+                &:nth-child(1)
+                    &:hover
+                        .header-card
+                            i
+                                color: yellow
+                &:nth-child(2)
+                    &:hover
+                        .header-card
+                            i
+                                color: green
+                &:nth-child(3)
+                    &:hover
+                        .header-card
+                            i
+                                color: #41a6d4
+                &:nth-child(4)
+                    &:hover
+                        .header-card
+                            i
+                                color: #9241d4
+                &:hover
+                    transition: 0.3s ease-in
+                    box-shadow: #24241f 1px 5px 15px 3px
+                    transform: scale(1.1)
+
+                .header-card
+                    color: white
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    padding: 40px 20px 10px 20px
+                    flex-direction: column
+                    i
+                        font-size: 3.5rem
+                        margin: auto
+                    h3
+                        padding: 20px 10px
+                .section-card
+                    width: 100%
+                    p
+                        padding: 20px
+                        text-align: justify
     #section_Descarga
         width: 100%
         height: 100vh
         padding: 0px $paddingXPagina
-        background-color: rgb(231, 231, 231)
+        background-image: $bgSecciones
         position: relative
-        padding-top: 20px
+        padding-top: 10px
         div
+            width: 80%
             height: 400px
-
+            margin: auto
             background: $azulLogo
             border-radius: 20px
             h2
@@ -214,39 +263,31 @@ main
                 justify-content: center
                 img
             div
-
                 width: 100%
                 height: 40%
                 display: flex
+                justify-content: center
+                align-items: center
+                gap: 10px
                 .appStore
-                    width: 50%
-                    height: 100%
-                    display: flex
-                    justify-content: end
-                    align-items: center
-
                     img
-                        width: 60%
-                        height: 70%
-                        padding: 10px
+                        width: 230px
+                        height: 80px
+                        background-color: white
+                        border-radius: 10px
                 .googlePlay
-                    width: 50%
-                    height: 100%
-
-                    display: flex
-                    justify-content: start
-                    align-items: center
                     img
-                        width: 60%
-                        height: 70%
-                        padding: 10px
+                        width: 230px
+                        height: 80px
+                        border-radius: 10px
+                        background-color: white
+
         .telefono
             display: flex
             justify-content: center
-
             img
-                width: 400px
-                height: 250px
+                width: 450px
+                height: 330px
                 padding: 20px
 
 footer

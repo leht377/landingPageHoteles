@@ -166,7 +166,7 @@ main #section_Otros_Hoteles {
   width: 100%;
   height: 100vh;
   padding: 0px 80px;
-  color: #000000;
+  color: #27272e;
 }
 main #section_Otros_Hoteles .Contenenedor_Otro_Hoteles {
   width: 100%;
@@ -179,7 +179,7 @@ main #section_Otros_Hoteles .Contenenedor_Otro_Hoteles {
 }
 main #section_Otros_Hoteles .Contenenedor_Otro_Hoteles h2 {
   color: transparent;
-  -webkit-text-stroke: 2px #000000;
+  -webkit-text-stroke: 2px #27272e;
   font-size: 3rem;
   padding: 10px;
   grid-column-start: 1;
@@ -206,40 +206,87 @@ main #section_nuestrosServicos {
   width: 100%;
   height: 100vh;
   padding: 0px 80px;
-  background-color: rgb(245, 240, 245);
+  background: #27272e;
 }
 main #section_nuestrosServicos h2 {
   text-align: center;
   padding: 20px 0px;
   font-weight: 900;
   font-size: 3.5rem;
+  color: white;
+}
+main #section_nuestrosServicos p {
+  color: #dddddd;
 }
 main #section_nuestrosServicos #box-cards {
   width: 100%;
   display: flex;
   align-items: stard;
-  gap: 10px;
-  padding-top: 50px;
+  gap: 20px;
+  padding-top: 70px;
   flex-wrap: wrap;
 }
 main #section_nuestrosServicos #box-cards .card-servicios {
-  flex-grow: 1;
+  flex: 1;
   min-width: 200px;
+  max-width: 320px;
   height: 350px;
   border-radius: 10px;
-  background: #000000;
+  border: 2px solid #24241f;
+  cursor: pointer;
+}
+main #section_nuestrosServicos #box-cards .card-servicios:nth-child(1):hover .header-card i {
+  color: yellow;
+}
+main #section_nuestrosServicos #box-cards .card-servicios:nth-child(2):hover .header-card i {
+  color: green;
+}
+main #section_nuestrosServicos #box-cards .card-servicios:nth-child(3):hover .header-card i {
+  color: #41a6d4;
+}
+main #section_nuestrosServicos #box-cards .card-servicios:nth-child(4):hover .header-card i {
+  color: #9241d4;
+}
+main #section_nuestrosServicos #box-cards .card-servicios:hover {
+  transition: 0.3s ease-in;
+  box-shadow: #24241f 1px 5px 15px 3px;
+  transform: scale(1.1);
+}
+main #section_nuestrosServicos #box-cards .card-servicios .header-card {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px 10px 20px;
+  flex-direction: column;
+}
+main #section_nuestrosServicos #box-cards .card-servicios .header-card i {
+  font-size: 3.5rem;
+  margin: auto;
+}
+main #section_nuestrosServicos #box-cards .card-servicios .header-card h3 {
+  padding: 20px 10px;
+}
+main #section_nuestrosServicos #box-cards .card-servicios .section-card {
+  width: 100%;
+}
+main #section_nuestrosServicos #box-cards .card-servicios .section-card p {
+  padding: 20px;
+  text-align: justify;
 }
 main #section_Descarga {
   width: 100%;
   height: 100vh;
   padding: 0px 80px;
-  background-color: rgb(231, 231, 231);
+  background-image: linear-gradient(to left bottom, #ffffff, #fefefe, #fefefe, #fdfdfd, #fcfcfc, #fafafb, #f9f9fa, #f7f7f9, #f3f4f8, #eff2f7, #ebeff5, #e6edf4);
   position: relative;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 main #section_Descarga div {
+  width: 80%;
   height: 400px;
-  background: #000000;
+  margin: auto;
+  background: #27272e;
   border-radius: 20px;
 }
 main #section_Descarga div h2 {
@@ -256,38 +303,29 @@ main #section_Descarga div div {
   width: 100%;
   height: 40%;
   display: flex;
-}
-main #section_Descarga div div .appStore {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 main #section_Descarga div div .appStore img {
-  width: 60%;
-  height: 70%;
-  padding: 10px;
-}
-main #section_Descarga div div .googlePlay {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: start;
-  align-items: center;
+  width: 230px;
+  height: 80px;
+  background-color: white;
+  border-radius: 10px;
 }
 main #section_Descarga div div .googlePlay img {
-  width: 60%;
-  height: 70%;
-  padding: 10px;
+  width: 230px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: white;
 }
 main #section_Descarga .telefono {
   display: flex;
   justify-content: center;
 }
 main #section_Descarga .telefono img {
-  width: 400px;
-  height: 250px;
+  width: 450px;
+  height: 330px;
   padding: 20px;
 }
 
