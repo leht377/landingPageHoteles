@@ -52,7 +52,6 @@ header nav .caja-items-nav li {
   height: 100%;
 }
 header nav .caja-items-nav li a {
-  display: block;
   height: 100%;
   padding: 20px 0px;
   font-size: 1.2em;
@@ -79,7 +78,7 @@ main #section_Slider {
   flex-direction: row;
   max-height: 100vh;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/cosmos-pacifico-piscina-min.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cosmosmin.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -425,8 +424,11 @@ footer section .Ventajas .box-logo-autores {
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  header nav {
+    justify-content: center;
+  }
   html {
-    font-size: 12px;
+    font-size: 10px !important;
   }
   header nav {
     padding: 2px;
@@ -442,16 +444,16 @@ footer section .Ventajas .box-logo-autores {
   header nav .caja-items-nav {
     flex-grow: 2;
   }
-  main #section_Slider .frase_landing {
+  main #section_Slide .frase_landing {
     text-align: center;
   }
-  main #section_Slider .frase_landing .frase {
+  main #section_Slide .frase_landing .frase {
     font-size: 3.5rem;
   }
-  main #section_Slider .frase_landing .explicacion {
+  main #section_Slide .frase_landing .explicacion {
     text-align: center;
   }
-  main #section_Slider .contenedor-fotos {
+  main #section_Slide .contenedor-fotos {
     display: none;
   }
   main #section_Otros_Hoteles {
@@ -481,7 +483,12 @@ footer section .Ventajas .box-logo-autores {
   }
   main #section_nuestrosServicos #box-cards {
     gap: 10px;
+    padding-block: 40px;
     padding-top: 20px;
+  }
+  main #section_nuestrosServicos #box-cards .card-servicios {
+    max-height: 250px;
+    cursor: pointer;
   }
   main #section_nuestrosServicos #box-cards .section-card {
     text-align: start;
@@ -650,8 +657,23 @@ footer section .Ventajas .box-logo-autores {
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
+  header nav {
+    justify-content: center;
+    gap: 0px;
+    font-size: 1.1rem;
+  }
+  header nav figure {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+  header nav .caja-items-nav {
+    display: flex;
+    justify-content: center;
+    flex: 2;
+  }
   html {
-    font-size: 12px;
+    font-size: 17px;
   }
   header nav {
     padding: 2px;
