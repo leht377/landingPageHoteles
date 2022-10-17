@@ -365,7 +365,6 @@ footer section .logo-footer .box-social-media .social-media {
   padding: 10px;
 }
 footer section .logo-footer .box-social-media .social-media figure {
-  width: 200px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -514,8 +513,276 @@ footer section .Ventajas .box-logo-autores {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
+  footer section .logo-footer {
+    justify-content: center;
+    align-items: center;
+  }
+  footer section .logo-footer article {
+    padding-top: 10px;
+    text-align: center;
+  }
+  footer section .logo-footer .box-social-media h3 {
+    text-align: center;
+    padding: 20px;
+  }
+  footer section .logo-footer .box-social-media .social-media {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  footer section .Ventajas h2 {
+    text-align: center;
+  }
+  footer section .Ventajas .box-ventajas {
+    margin-top: 10px;
+  }
+  html {
+    font-size: 12px;
+  }
+  header nav {
+    padding: 2px;
+    gap: 2px;
+  }
+  header nav figure {
+    flex-grow: 1;
+  }
+  header nav figure img {
+    width: 110px;
+    height: 55px;
+  }
+  header nav .caja-items-nav {
+    flex-grow: 2;
+  }
+  main #section_Slider .frase_landing {
+    text-align: center;
+  }
+  main #section_Slider .frase_landing .frase {
+    font-size: 3.5rem;
+  }
+  main #section_Slider .frase_landing .explicacion {
+    text-align: center;
+  }
+  main #section_Slider .contenedor-fotos {
+    display: none;
+  }
+  main #section_Otros_Hoteles {
+    padding: 0px;
+    height: auto;
+  }
+  main #section_Otros_Hoteles .Contenenedor_Otro_Hoteles {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px repeat(4, 1fr);
+    gap: 5px;
+  }
+  main #section_Otros_Hoteles .Contenenedor_Otro_Hoteles figure img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 120px;
+    border: 2px solid white;
+  }
+  main #section_Otros_Hoteles .Contenenedor_Otro_Hoteles figure figcaption {
+    padding: 10px;
+  }
+  main #section_nuestrosServicos {
+    padding: 10px;
+    height: auto;
+  }
+  main #section_nuestrosServicos h2 {
+    font-size: 2rem;
+  }
+  main #section_nuestrosServicos #box-cards {
+    gap: 10px;
+    padding-top: 20px;
+  }
+  main #section_nuestrosServicos #box-cards .section-card {
+    text-align: start;
+  }
+  main #section_Descarga {
+    padding: 10px;
+    height: auto;
+    position: relative;
+  }
+  main #section_Descarga div {
+    width: 100%;
+  }
+  main #section_Descarga div div .appStore img {
+    width: 170px;
+    height: 70px;
+  }
+  main #section_Descarga div div .googlePlay img {
+    width: 170px;
+    height: 70px;
+  }
+  main #section_Descarga .telefono {
+    display: none;
+  }
+  footer {
+    padding: 10px;
+  }
+  footer section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  footer section .logo-footer {
+    justify-content: center;
+    align-items: center;
+  }
+  footer section .logo-footer article {
+    padding-top: 10px;
+    text-align: center;
+  }
+  footer section .logo-footer .box-social-media h3 {
+    text-align: center;
+    padding: 20px;
+  }
+  footer section .logo-footer .box-social-media .social-media {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  footer section .Ventajas h2 {
+    text-align: center;
+  }
+  footer section .Ventajas .box-ventajas {
+    margin-top: 10px;
+  }
 }
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
-/* Extra large devices (large laptops and desktops, 1200px and up) *//*# sourceMappingURL=style.css.map */
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 12px;
+  }
+  header nav {
+    padding: 2px;
+    gap: 2px;
+  }
+  header nav figure {
+    flex-grow: 1;
+  }
+  header nav figure img {
+    width: 110px;
+    height: 55px;
+  }
+  header nav .caja-items-nav {
+    flex-grow: 2;
+  }
+  main #section_Slider .frase_landing {
+    text-align: center;
+  }
+  main #section_Slider .frase_landing .frase {
+    font-size: 3.5rem;
+  }
+  main #section_Slider .frase_landing .explicacion {
+    text-align: center;
+  }
+  main #section_Slider .contenedor-fotos {
+    display: none;
+  }
+  main #section_Otros_Hoteles {
+    padding: 0px;
+    height: auto;
+  }
+  main #section_Otros_Hoteles .Contenenedor_Otro_Hoteles {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px repeat(4, 1fr);
+    gap: 5px;
+  }
+  main #section_Otros_Hoteles .Contenenedor_Otro_Hoteles figure img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 120px;
+    border: 2px solid white;
+  }
+  main #section_Otros_Hoteles .Contenenedor_Otro_Hoteles figure figcaption {
+    padding: 10px;
+  }
+  main #section_nuestrosServicos {
+    padding: 10px;
+    height: auto;
+  }
+  main #section_nuestrosServicos h2 {
+    font-size: 2rem;
+  }
+  main #section_nuestrosServicos #box-cards {
+    gap: 10px;
+    padding-top: 20px;
+  }
+  main #section_nuestrosServicos #box-cards .section-card {
+    text-align: start;
+  }
+  main #section_Descarga {
+    padding: 10px;
+    height: auto;
+    position: relative;
+  }
+  main #section_Descarga div {
+    width: 100%;
+  }
+  main #section_Descarga div div .appStore img {
+    width: 170px;
+    height: 70px;
+  }
+  main #section_Descarga div div .googlePlay img {
+    width: 170px;
+    height: 70px;
+  }
+  main #section_Descarga .telefono {
+    display: none;
+  }
+  footer {
+    padding: 10px;
+  }
+  footer section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  footer section .logo-footer {
+    justify-content: center;
+    align-items: center;
+  }
+  footer section .logo-footer article {
+    padding-top: 10px;
+    text-align: center;
+  }
+  footer section .logo-footer .box-social-media h3 {
+    text-align: center;
+    padding: 20px;
+  }
+  footer section .logo-footer .box-social-media .social-media {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  footer section .Ventajas h2 {
+    text-align: center;
+  }
+  footer section .Ventajas .box-ventajas {
+    margin-top: 10px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1300px) {
+  main #section_Otros_Hoteles {
+    padding: 0px;
+    height: auto;
+  }
+  main #section_Otros_Hoteles .Contenenedor_Otro_Hoteles {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px repeat(4, 1fr);
+    gap: 10px;
+  }
+  main #section_Otros_Hoteles .Contenenedor_Otro_Hoteles figure img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 120px;
+    border: 2px solid white;
+  }
+  main #section_Otros_Hoteles .Contenenedor_Otro_Hoteles figure figcaption {
+    padding: 10px;
+  }
+  main #section_Descarga .telefono {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
