@@ -3,6 +3,7 @@
 
 $blackTransparent: rgba(0, 0, 0, 0.459)
 $paddingXPagina: 80px
+$paddingXResponsive: 10px
 $colorNav: white
 $tamanoDeLetra: 15px
 $fontFamily: Roboto
@@ -192,7 +193,7 @@ main
             flex-wrap: wrap
             .card-servicios
                 flex: 1
-                min-width: 200px
+                min-width: 170px
                 max-width: 320px
                 height: 350px
                 border-radius: 10px
@@ -240,7 +241,7 @@ main
                     width: 100%
                     p
                         padding: 20px
-                        text-align: justify
+                        text-align: start
     #section_Descarga
         width: 100%
         height: 100vh
@@ -263,7 +264,7 @@ main
             .logo
                 display: flex
                 justify-content: center
-                img
+
             div
                 width: 100%
                 height: 40%
@@ -383,8 +384,7 @@ footer
                 display: none
         #section_Otros_Hoteles
             padding: 0px
-            height: 100vh
-            max-height: 100vh
+            height: auto
             .Contenenedor_Otro_Hoteles
                 grid-template-columns: 1fr
                 grid-template-rows: 50px repeat(4,1fr)
@@ -397,17 +397,35 @@ footer
                     figcaption
                         padding: 10px
         #section_nuestrosServicos
-            padding: 10px
-            overflow: hidden
+            padding: $paddingXResponsive
+            height: auto
             h2
-                font-size: 2.5rem
-            #box-card
-                .card-servicios
-
+                font-size: 2rem
+            #box-cards
+                gap: 10px
+                padding-top: 20px
+                .section-card
+                    text-align: start
         #section_Descarga
-            display: none
+            padding: $paddingXResponsive
+            height: auto
+            position: relative
+            div
+                width: 100%
+                div
+                    .appStore
+                        img
+                            width: 170px
+                            height: 70px
+                    .googlePlay
+                        img
+                            width: 170px
+                            height: 70px
+            .telefono
+                display: none
+
     footer
-        display: none
+        padding: $paddingXResponsive
         section
             display: grid
             grid-template-columns: 1fr
