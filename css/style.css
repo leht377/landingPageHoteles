@@ -176,14 +176,13 @@ main #section_Otros_Hoteles .Contenenedor_Otro_Hoteles {
   gap: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100px;
+  grid-template-rows: 100px 1fr 1fr 1fr 1fr;
 }
 main #section_Otros_Hoteles .Contenenedor_Otro_Hoteles h2 {
   text-align: center;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   grid-column-start: 1;
   grid-column-end: -1;
-  grid-row: 1;
 }
 main #section_Otros_Hoteles .Contenenedor_Otro_Hoteles figure {
   box-shadow: #eeeeee 1px 5px 15px 3px;
@@ -202,7 +201,7 @@ main #section_Otros_Hoteles .Contenenedor_Otro_Hoteles figure figcaption {
   text-align: justify;
 }
 main #section_Otros_Hoteles .Contenenedor_Otro_Hoteles figure figcaption h4 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 main #section_nuestrosServicos {
   width: 100%;
@@ -273,6 +272,7 @@ main #section_nuestrosServicos #box-cards .card-servicios .header-card h3 {
   padding: 20px 10px;
 }
 main #section_nuestrosServicos #box-cards .card-servicios .section-card {
+  font-size: 1rem;
   width: 100%;
 }
 main #section_nuestrosServicos #box-cards .card-servicios .section-card p {
@@ -424,7 +424,11 @@ footer section .Ventajas .box-logo-autores {
     opacity: 1;
   }
 }
-@media only screen and (max-width: 750px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
   header nav {
     padding: 2px;
     gap: 2px;
@@ -439,44 +443,57 @@ footer section .Ventajas .box-logo-autores {
   header nav .caja-items-nav {
     flex-grow: 2;
   }
-  #section_Slider {
-    padding: 0px;
-    justify-content: center !important;
-  }
-  #section_Slider .frase_landing {
-    margin-top: 0px !important;
-  }
-  #section_Slider .frase_landing .frase {
-    font-size: 3.5rem !important;
-  }
-  #section_Slider .frase_landing .explicacion {
+  main #section_Slider .frase_landing {
     text-align: center;
   }
-  #section_Otros_Hoteles {
-    padding: 0px !important;
-    height: 120vh !important;
+  main #section_Slider .frase_landing .frase {
+    font-size: 3.5rem;
   }
-  #section_Otros_Hoteles .Contenenedor_Otro_Hoteles {
-    grid-template-columns: 1fr !important;
-    grid-template-row: 1fr;
-    gap: 5px !important;
-  }
-  #section_Otros_Hoteles .Contenenedor_Otro_Hoteles figure img {
-    width: 40% !important;
-    height: 100% !important;
-  }
-  #section_Otros_Hoteles .Contenenedor_Otro_Hoteles figure figcaption {
-    padding: 10px !important;
-  }
-}
-@media only screen and (max-width: 750px) {
-  html {
-    font-size: 12px;
-  }
-  main #section_Slider .frase_landing {
-    text-align: center !important;
+  main #section_Slider .frase_landing .explicacion {
+    text-align: center;
   }
   main #section_Slider .contenedor-fotos {
-    display: none !important;
+    display: none;
   }
-}/*# sourceMappingURL=style.css.map */
+  main #section_Otros_Hoteles {
+    padding: 0px;
+    height: 100vh;
+    max-height: 100vh;
+  }
+  main #section_Otros_Hoteles .Contenenedor_Otro_Hoteles {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px repeat(4, 1fr);
+    gap: 5px;
+  }
+  main #section_Otros_Hoteles .Contenenedor_Otro_Hoteles figure img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 120px;
+    border: 2px solid white;
+  }
+  main #section_Otros_Hoteles .Contenenedor_Otro_Hoteles figure figcaption {
+    padding: 10px;
+  }
+  main #section_nuestrosServicos {
+    padding: 10px;
+    overflow: hidden;
+  }
+  main #section_nuestrosServicos h2 {
+    font-size: 2.5rem;
+  }
+  main #section_Descarga {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  footer section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) *//*# sourceMappingURL=style.css.map */
