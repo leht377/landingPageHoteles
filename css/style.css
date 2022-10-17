@@ -216,6 +216,9 @@ main #section_nuestrosServicos h2 {
   font-size: 3.5rem;
   color: white;
 }
+main #section_nuestrosServicos .podrasEncontar {
+  font-size: 2rem;
+}
 main #section_nuestrosServicos p {
   color: #dddddd;
 }
