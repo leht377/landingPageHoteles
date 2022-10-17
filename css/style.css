@@ -79,7 +79,7 @@ main #section_Slider {
   flex-direction: row;
   max-height: 100vh;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.hotelcosmospacifico.com/uploads/cms_apps/imagenes/cosmos-pacifico-piscina.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/cosmos-pacifico-piscina-min.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
